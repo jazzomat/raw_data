@@ -33,12 +33,12 @@ version 1.2 of the Weimar Jazz Database (Aug 2016).
       * 'onset': note onset (sec)
       * 'duration': note duration (sec)
       * 'pitch': MIDI pitch
-      * 'metrical_position': metrical position (see (Jazzomat website)[http://jazzomat.hfm-weimar.de/] for more information)
+      * 'metrical_position': metrical position (see [Jazzomat website](http://jazzomat.hfm-weimar.de/) for more information)
       * 'phraseid': phrase ID
       * 'base_name': solo base name (see *df_solos*)
                                         'base_name': base_name})  
       * 'solo_id': Solo ID
-      * 'note_id': Note ID (note: this does not correspond to the note ID in the wjazzd.db since here, only notes longer than 50 ms were processed, correspondance to notes in the wjazzd.db should best be created via onset & pitch)
+      * 'note_id': Note ID (CAUTION: this does not correspond to the note ID in the wjazzd.db since here, only notes longer than 50 ms were processed, correspondance to notes in the wjazzd.db should best be created via onset & pitch)
     * Parameters from automatic analysis
       * 'intensity_max': Maximum over frame-wise intensity values over note duration
       * 'intensity_median': Median over frame-wise intensity values over note duration
@@ -47,7 +47,8 @@ version 1.2 of the Weimar Jazz Database (Aug 2016).
       * 'intensity_rel_peak_pos': Relative peak position [0, 1] over frame-wise intensity values over note duration
       * 'intensity_5_to_95_percentile_range': Note-wise peak intensity (scaled to [0, 1] based on 5% / 95% percentiles)
       * 'f0_mod_range_cent': f0 modulation range (cent)
-      * 'f0_av_f0_dev_median': median over frame-wise f0-deviation from annotated pitch (cent)                                         * 'f0_av_f0_dev_mean': mean over frame-wise f0-deviation from annotated pitch (cent)
+      * 'f0_av_f0_dev_median': median over frame-wise f0-deviation from annotated pitch (cent)                                          
+      * 'f0_av_f0_dev_mean': mean over frame-wise f0-deviation from annotated pitch (cent)
       * 'f0_av_abs_f0_dev_median': median over absolute frame-wise f0-deviation from annotated pitch (cent)  
       * 'f0_av_abs_f0_dev_mean': median over absolute frame-wise f0-deviation from annotated pitch (cent)
       * 'f0_iqr_cent_rel': inter-quartile range over frame-wise f0-deviation from annotated pitch (cent)
